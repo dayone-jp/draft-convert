@@ -1,6 +1,6 @@
 # **draft-convert**
 
-[![npm version](https://badge.fury.io/js/draft-convert.svg)](https://www.npmjs.com/package/draft-convert) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 *Extensibly serialize & deserialize [**Draft.js**](http://draftjs.org/) content with HTML*
 
