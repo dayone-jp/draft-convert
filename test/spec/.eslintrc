@@ -1,8 +1,12 @@
 {
   "env": {
-    "jasmine": true
+    "node": true,
+    "jest": true,
+    "browser": true
   },
   "rules": {
-    "no-invalid-this": "off"
+    "no-invalid-this": "off",
+    "react/display-name": "off",
+    "@typescript-eslint/no-unused-vars": "off"
   }
 }

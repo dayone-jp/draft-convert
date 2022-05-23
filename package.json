@@ -1,10 +1,10 @@
 {
   "name": "draft-convert",
-  "version": "2.1.12",
+  "version": "2.2.0",
   "description": "Extensibly serialize & deserialize Draft.js ContentState",
   "main": "lib/index.js",
   "module": "esm/index.js",
-  "repository": "HubSpot/draft-convert",
+  "repository": "git@github.com:dayone-jp/draft-convert.git",
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm && npm run build:umd",
     "build:cjs": "cross-env BABEL_ENV=cjs babel src --out-dir lib",
@@ -33,43 +33,48 @@
     "draft-convert",
     "convert"
   ],
-  "author": "bbriggs@hubspot.com",
   "license": "Apache-2.0",
   "peerDependencies": {
-    "draft-js": ">=0.7.0",
-    "react": "^15.0.2 || ^16.0.0-rc || ^16.0.0 || ^17.0.0",
-    "react-dom": "^15.0.2 || ^16.0.0-rc || ^16.0.0 || ^17.0.0"
+    "draft-js": ">=0.11.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "@babel/runtime": "^7.5.5",
-    "immutable": "~3.7.4",
-    "invariant": "^2.2.1"
+    "@babel/runtime": "^7.18.0",
+    "immutable": "~4.0.0",
+    "invariant": "^2.2.4"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
-    "@babel/plugin-transform-runtime": "^7.5.5",
-    "@babel/preset-env": "^7.5.4",
-    "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.2",
-    "babel-jest": "^24.8.0",
-    "babel-loader": "^8.0.6",
-    "cross-env": "^3.1.4",
-    "draft-js": "^0.8.1",
-    "eslint": "6.0.1",
-    "eslint-config-hubspot": "^7.0.0",
-    "eslint-config-prettier": "^2.2.0",
-    "eslint-plugin-react": "6.8.0",
-    "jasmine": "^2.2.0",
-    "jest": "^24.8.0",
-    "prettier": "^1.8.2",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "rimraf": "2.5.4",
-    "webpack": "^4.35.3",
-    "webpack-nano": "^0.6.2"
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.0",
+    "@babel/plugin-transform-runtime": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-react": "^7.17.12",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^28.1.0",
+    "babel-loader": "^8.2.5",
+    "cross-env": "^7.0.3",
+    "draft-js": "^0.11.7",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
+    "prettier": "^2.6.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "rimraf": "3.0.2",
+    "webpack": "^5.72.1",
+    "webpack-nano": "^1.1.1"
   },
   "jest": {
-    "testRegex": "/test/spec/.*\\.js$"
+    "testEnvironment": "jest-environment-jsdom",
+    "testRegex": "/test/spec/.*\\.js$",
+    "setupFilesAfterEnv": [
+      "./jest.setup.js"
+    ]
   }
 }
