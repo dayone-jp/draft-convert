@@ -1,0 +1,17 @@
+name: 'jest coverage'
+on:
+  pull_request:
+    branches:
+      - develop
+      - master
+
+permissions: write-all
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        with:
+          test-script: npm test
