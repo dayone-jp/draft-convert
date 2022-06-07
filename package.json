@@ -12,7 +12,7 @@
     "build:umd": "wp",
     "jest:watch": "jest --watch",
     "jest:debug": "node --debug-brk --inspect ./node_modules/.bin/jest -i",
-    "test-once": "npm run jest",
+    "test-once": "npm test",
     "test": "jest",
     "clean": "rimraf ./dist ./lib ./esm",
     "build-and-test": "npm run clean && npm run build && npm run test-once",
