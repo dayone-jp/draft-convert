@@ -4,3 +4,7 @@ lib/
 esm/
 npm-debug.log
 .DS_Store
+
+# testing
+/coverage
+report.json
